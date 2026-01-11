@@ -59,7 +59,7 @@ public class Network {
         if(name1.equals(name2)) return false;
         boolean added = false;
         if(! u1.follows(name2)){
-            u1.addFollowee(name2)
+            u1.addFollowee(name2);
             added = true;
         }
         return added;
@@ -119,7 +119,7 @@ public class Network {
        String a = "Network:";
        for(int i = 0; i < userCount; i++){
             a += "\n" + users[i].getName() + " -> ";
-            for(int j = 0; j < users[i].getCount(); j++){
+            for(int j = 0; j < users[i].getfCount(); j++){
                 a += users[i].getfFollows()[j] + " ";
             }
        }
